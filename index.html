@@ -1,0 +1,1617 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#003399">
+<title>1ª Circuito Rede Boa de Corrida · Irecê · 31.05.2026</title>
+<meta name="description" content="1ª Circuito Rede Boa de Corrida. Percursos 3K, 5K e 10K em Irecê com R$ 10 mil em premiação. 31 de maio de 2026.">
+<meta property="og:title" content="1ª Circuito Rede Boa de Corrida · Irecê">
+<meta property="og:description" content="Corrida de rua em Irecê com 3, 5 e 10 km. Realização Rádio Boa FM. Inscrições abertas.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap&italic" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<style>
+/* ═══════════════════════════════════════════════════════════════
+   DESIGN SYSTEM — REDE BOA
+═══════════════════════════════════════════════════════════════ */
+:root {
+  --brand-blue: #003399;
+  --brand-blue-deep: #002266;
+  --brand-blue-darker: #001744;
+  --brand-light: #00AEEF;
+  --brand-yellow: #FFCC00;
+  --brand-yellow-dim: #E6B800;
+
+  --surface: rgba(255, 255, 255, 0.05);
+  --surface-2: rgba(255, 255, 255, 0.08);
+  --line: rgba(255, 255, 255, 0.1);
+  --line-2: rgba(255, 255, 255, 0.2);
+
+  --text: #FFFFFF;
+  --text-2: rgba(255, 255, 255, 0.7);
+  --text-3: rgba(255, 255, 255, 0.45);
+
+  --font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --container: min(1280px, 94vw);
+  --section-y: clamp(64px, 9vw, 112px);
+
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+
+  --r-sm: 6px;
+  --r: 12px;
+  --r-lg: 20px;
+  --r-xl: 28px;
+}
+
+*,*::before,*::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  background: var(--brand-blue);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+img, svg { display: block; max-width: 100%; }
+button { font: inherit; cursor: pointer; border: 0; background: none; color: inherit; }
+a { color: inherit; text-decoration: none; }
+
+.container { width: var(--container); margin-inline: auto; }
+
+/* helpers de tipografia — pegada da ref */
+.display { font-weight: 900; font-style: italic; text-transform: uppercase; letter-spacing: -0.03em; line-height: 0.88; }
+.italic-black { font-weight: 900; font-style: italic; text-transform: uppercase; }
+.kicker { font-size: 10px; font-weight: 800; letter-spacing: 0.3em; text-transform: uppercase; font-style: italic; }
+.glass-dark { background: rgba(0, 34, 102, 0.4); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); border: 1px solid rgba(0, 174, 239, 0.2); }
+.glass { background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border: 1px solid rgba(255, 255, 255, 0.2); }
+
+/* ═══════════════════════════════════════════════════════════════
+   BTN
+═══════════════════════════════════════════════════════════════ */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  gap: 10px;
+  padding: 14px 26px;
+  font-weight: 900; font-size: 12px;
+  font-style: italic;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  transition: transform 0.25s var(--ease), box-shadow 0.3s var(--ease), background 0.3s, color 0.3s;
+  white-space: nowrap;
+  border: 2px solid transparent;
+  border-radius: 0;
+  cursor: pointer;
+}
+.btn svg { transition: transform 0.3s var(--ease); }
+.btn:hover svg { transform: translateX(4px); }
+.btn-primary { background: #fff; color: var(--brand-blue); box-shadow: 0 10px 30px rgba(0,0,0,0.25); }
+.btn-primary:hover { background: var(--brand-yellow); transform: translateY(-2px); }
+.btn-yellow { background: var(--brand-yellow); color: var(--brand-blue); box-shadow: 0 10px 28px rgba(255, 204, 0, 0.35); }
+.btn-yellow:hover { background: #fff; transform: translateY(-2px); }
+.btn-outline { border-color: rgba(255,255,255,0.3); background: transparent; color: #fff; backdrop-filter: blur(8px); }
+.btn-outline:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.6); }
+.btn-pill { border-radius: 999px; padding: 10px 22px; }
+.btn-lg { padding: 18px 32px; font-size: 13px; }
+.btn-xl { padding: 22px 40px; font-size: 14px; }
+
+/* ═══════════════════════════════════════════════════════════════
+   NAV
+═══════════════════════════════════════════════════════════════ */
+.nav {
+  position: absolute; top: 0; left: 0; right: 0; z-index: 50;
+  padding: 24px 0;
+  transition: background 0.35s var(--ease), backdrop-filter 0.35s var(--ease), padding 0.3s var(--ease);
+}
+.nav.scrolled {
+  position: fixed;
+  background: rgba(0, 23, 68, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+}
+.nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.nav-left { display: flex; align-items: center; gap: 40px; }
+.brand { display: flex; align-items: center; gap: 10px; }
+.brand-logo {
+  width: 40px; height: 40px;
+  background: #fff;
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.18);
+}
+.brand-logo svg { width: 22px; height: 22px; color: var(--brand-blue); }
+.brand-text { display: flex; flex-direction: column; line-height: 1; }
+.brand-text .t1 { font-weight: 900; font-style: italic; font-size: 18px; letter-spacing: -0.02em; text-transform: uppercase; }
+.brand-text .t2 { font-size: 9px; font-weight: 700; letter-spacing: 0.28em; opacity: 0.8; margin-top: 3px; text-transform: uppercase; }
+
+.nav-menu { display: none; gap: 32px; align-items: center; }
+.nav-menu a {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.7);
+  transition: color 0.25s;
+}
+.nav-menu a.active { color: #fff; font-weight: 800; }
+.nav-menu a:hover { color: #fff; }
+@media (min-width: 960px) { .nav-menu { display: flex; } }
+
+.nav-right { display: flex; align-items: center; gap: 24px; }
+.nav-social { display: none; align-items: center; gap: 14px; }
+.nav-social a { color: rgba(255,255,255,0.55); transition: color 0.25s; }
+.nav-social a:hover { color: var(--brand-yellow); }
+.nav-social svg { width: 18px; height: 18px; }
+@media (min-width: 720px) { .nav-social { display: flex; } }
+
+/* ═══════════════════════════════════════════════════════════════
+   HERO
+═══════════════════════════════════════════════════════════════ */
+.hero {
+  position: relative;
+  min-height: 100svh;
+  overflow: hidden;
+  background: var(--brand-blue);
+  isolation: isolate;
+  display: flex; flex-direction: column;
+}
+.hero-bg {
+  position: absolute; inset: 0; z-index: 0;
+}
+.hero-bg img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  opacity: 0.55;
+}
+.hero-bg::after {
+  content: '';
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(90deg, rgba(0,34,102,0.92) 0%, rgba(0,34,102,0.5) 55%, rgba(0,34,102,0.15) 100%),
+    linear-gradient(180deg, rgba(0,17,51,0.3) 0%, transparent 40%, rgba(0,17,51,0.7) 100%);
+  mix-blend-mode: multiply;
+}
+.hero-bg::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: rgba(0, 51, 153, 0.25);
+  mix-blend-mode: multiply;
+  z-index: 1;
+}
+.hero-content {
+  position: relative; z-index: 2;
+  flex: 1;
+  display: flex; flex-direction: column;
+  padding-top: 120px;
+  padding-bottom: 40px;
+}
+.hero-main {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  align-items: center;
+}
+@media (min-width: 1024px) { .hero-main { grid-template-columns: 7fr 5fr; gap: 48px; } }
+
+.hero-badge-row {
+  display: flex; align-items: center; gap: 12px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  opacity: 0;
+  animation: fadeUp 0.7s var(--ease-out) 0.1s forwards;
+}
+.hero-badge {
+  background: var(--brand-yellow);
+  color: var(--brand-blue);
+  padding: 5px 12px;
+  border-radius: 4px;
+  font-size: 10px; font-weight: 900; letter-spacing: 0.2em;
+  text-transform: uppercase; font-style: italic;
+}
+.hero-badge-line { height: 1px; width: 40px; background: rgba(255,255,255,0.2); }
+.hero-badge-label { font-size: 10px; font-weight: 700; letter-spacing: 0.3em; opacity: 0.6; text-transform: uppercase; }
+
+.hero-title {
+  font-weight: 900; font-style: italic;
+  font-size: clamp(56px, 10vw, 128px);
+  line-height: 0.85;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 32px;
+  text-shadow: 0 4px 30px rgba(0,0,0,0.4);
+}
+.hero-title .line { display: block; overflow: hidden; }
+.hero-title .word {
+  display: inline-block;
+  transform: translateY(100%);
+  opacity: 0;
+  animation: rise 0.8s var(--ease-out) forwards;
+}
+.hero-title .w1 { animation-delay: 0.2s; }
+.hero-title .w2 { animation-delay: 0.3s; }
+.hero-title .w3 { animation-delay: 0.4s; color: var(--brand-yellow); text-shadow: none; }
+.hero-title .w4 { animation-delay: 0.5s; color: var(--brand-yellow); text-shadow: none; }
+@keyframes rise { to { transform: translateY(0); opacity: 1; } }
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-ctas {
+  display: flex; flex-wrap: wrap; gap: 12px;
+  margin-bottom: 40px;
+  opacity: 0;
+  animation: fadeUp 0.7s var(--ease-out) 0.7s forwards;
+}
+
+.hero-meta {
+  display: flex; gap: 36px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 28px;
+  flex-wrap: wrap;
+  opacity: 0;
+  animation: fadeUp 0.7s var(--ease-out) 0.9s forwards;
+}
+.hero-meta-item { display: flex; align-items: center; gap: 14px; }
+.hero-meta-icon {
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.05);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.hero-meta-icon svg { width: 22px; height: 22px; color: var(--brand-yellow); }
+.hero-meta-text h4 {
+  font-size: 10px; font-weight: 700; letter-spacing: 0.22em; opacity: 0.55;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+.hero-meta-text p { font-size: 15px; font-weight: 900; font-style: italic; text-transform: uppercase; }
+
+/* ─ Stats card ─ */
+.hero-card-wrap {
+  display: flex; justify-content: flex-end; align-items: center;
+  opacity: 0;
+  animation: cardIn 0.8s var(--ease-out) 0.5s forwards;
+}
+@keyframes cardIn {
+  from { opacity: 0; transform: scale(0.92); }
+  to { opacity: 1; transform: scale(1); }
+}
+.hero-card {
+  background: rgba(0, 23, 68, 0.55);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(0, 174, 239, 0.25);
+  border-radius: var(--r-xl);
+  padding: 32px;
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+}
+.hero-card-lote {
+  position: absolute; top: -22px; right: -22px;
+  width: 82px; height: 82px;
+  background: var(--brand-yellow);
+  border-radius: 50%;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  transform: rotate(12deg);
+  border: 4px solid var(--brand-blue);
+  box-shadow: 0 14px 24px rgba(0,0,0,0.35);
+}
+.hero-card-lote .lt1 { font-size: 10px; font-weight: 900; color: var(--brand-blue); line-height: 1; font-style: italic; }
+.hero-card-lote .lt2 { font-size: 26px; font-weight: 900; color: var(--brand-blue); line-height: 1; font-style: italic; }
+.hero-card h3 {
+  font-size: 18px; font-weight: 900; font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  margin-bottom: 24px;
+  display: flex; align-items: center; gap: 12px;
+}
+.hero-card h3 svg { width: 22px; height: 22px; color: var(--brand-yellow); }
+.countdown { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 28px; }
+.cd-box {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--r-lg);
+  padding: 18px 10px;
+  text-align: center;
+}
+.cd-num {
+  font-size: clamp(26px, 3vw, 32px);
+  font-weight: 900; font-style: italic;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.cd-label {
+  font-size: 8px; font-weight: 700; letter-spacing: 0.2em;
+  opacity: 0.5;
+  margin-top: 8px;
+  text-transform: uppercase;
+}
+.hero-card-stats { display: flex; flex-direction: column; gap: 12px; }
+.hero-card-stat-row {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 14px 18px;
+  background: rgba(255,255,255,0.05);
+  border-radius: var(--r-lg);
+}
+.hero-card-stat-row .left { display: flex; align-items: center; gap: 10px; }
+.hero-card-stat-row .left svg { width: 18px; height: 18px; color: var(--brand-light); }
+.hero-card-stat-row .left span { font-size: 13px; font-weight: 700; }
+.hero-card-stat-row .right { font-size: 16px; font-weight: 900; font-style: italic; }
+.progress-track {
+  width: 100%; height: 8px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  width: 32%;
+  background: linear-gradient(90deg, var(--brand-yellow), #FFE033);
+  border-radius: 999px;
+  box-shadow: 0 0 14px rgba(255, 204, 0, 0.5);
+  animation: progFill 1.4s var(--ease-out) 1.2s both;
+}
+@keyframes progFill { from { width: 0; } to { width: 32%; } }
+.progress-note { font-size: 10px; font-weight: 700; text-align: center; opacity: 0.7; text-transform: uppercase; letter-spacing: 0.1em; }
+
+/* ─ Categories bar ─ */
+.categories {
+  margin-top: 40px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 24px;
+  opacity: 0;
+  animation: fadeUp 0.7s var(--ease-out) 1.1s forwards;
+}
+.categories-row {
+  display: flex; gap: 36px;
+  overflow-x: auto;
+  padding-bottom: 6px;
+  scrollbar-width: none;
+}
+.categories-row::-webkit-scrollbar { display: none; }
+.cat-item { min-width: max-content; cursor: pointer; }
+.cat-item-inner { display: flex; align-items: center; gap: 12px; }
+.cat-item-num {
+  font-size: 11px; font-weight: 900; font-style: italic;
+  color: rgba(255,255,255,0.4);
+  transition: color 0.25s;
+}
+.cat-item-label {
+  font-size: 14px; font-weight: 900; font-style: italic;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  transition: color 0.25s;
+}
+.cat-item:hover .cat-item-num { color: var(--brand-yellow); }
+.cat-item-bar {
+  height: 2px; width: 100%;
+  background: var(--brand-yellow);
+  margin-top: 6px;
+  box-shadow: 0 0 12px var(--brand-yellow);
+  display: none;
+}
+.cat-item.active .cat-item-bar { display: block; }
+
+/* ═══════════════════════════════════════════════════════════════
+   QUICKBAND
+═══════════════════════════════════════════════════════════════ */
+.quickband {
+  background: var(--brand-yellow);
+  padding: 18px 0;
+  color: var(--brand-blue);
+}
+.quickband-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  gap: 0;
+}
+@media (min-width: 720px) { .quickband-grid { grid-template-columns: repeat(4, 1fr); } }
+.qb-item {
+  padding: 6px 10px;
+  border-right: 1px solid rgba(0, 51, 153, 0.2);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+}
+.qb-item:nth-child(2) { border-right: 0; }
+@media (min-width: 720px) {
+  .qb-item:nth-child(2) { border-right: 1px solid rgba(0, 51, 153, 0.2); }
+  .qb-item:last-child { border-right: 0; }
+}
+.qb-label { font-size: 10px; font-weight: 800; letter-spacing: 0.25em; opacity: 0.7; text-transform: uppercase; margin-bottom: 2px; }
+.qb-value { font-size: clamp(14px, 1.6vw, 18px); font-weight: 900; font-style: italic; text-transform: uppercase; letter-spacing: -0.01em; }
+
+/* ═══════════════════════════════════════════════════════════════
+   SECTIONS
+═══════════════════════════════════════════════════════════════ */
+section { padding: var(--section-y) 0; position: relative; }
+.eyebrow {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-size: 11px; font-weight: 800; letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--brand-yellow);
+  margin-bottom: 18px;
+  font-style: italic;
+}
+.eyebrow::before {
+  content: ''; display: inline-block;
+  width: 28px; height: 1px;
+  background: var(--brand-yellow);
+}
+.section-title {
+  font-weight: 900; font-style: italic;
+  font-size: clamp(36px, 5.5vw, 64px);
+  line-height: 0.92;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  max-width: 22ch;
+  margin-bottom: 22px;
+}
+.section-title .hl { color: var(--brand-yellow); }
+.section-lead {
+  font-size: clamp(15px, 1.7vw, 18px);
+  color: var(--text-2);
+  max-width: 60ch;
+  margin-bottom: 48px;
+}
+
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out);
+  transition-delay: var(--delay, 0ms);
+}
+[data-reveal].in { opacity: 1; transform: translateY(0); }
+
+.bg-deep { background: var(--brand-blue-deep); }
+.bg-darker { background: var(--brand-blue-darker); }
+
+/* ═══════════════════════════════════════════════════════════════
+   POSICIONAMENTO
+═══════════════════════════════════════════════════════════════ */
+.positioning {
+  background: var(--brand-blue-deep);
+  text-align: center;
+  padding: calc(var(--section-y) * 0.95) 0;
+}
+.positioning .big-text {
+  font-weight: 900; font-style: italic;
+  font-size: clamp(32px, 5.5vw, 64px);
+  line-height: 0.98;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  max-width: 22ch;
+  margin: 0 auto 22px;
+}
+.positioning .big-text .hl { color: var(--brand-yellow); }
+.positioning .sub {
+  max-width: 62ch;
+  margin-inline: auto;
+  font-size: clamp(15px, 1.6vw, 17px);
+  color: var(--text-2);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   PERCURSOS
+═══════════════════════════════════════════════════════════════ */
+.percursos-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  margin-top: 40px;
+}
+@media (min-width: 720px) { .percursos-grid { grid-template-columns: repeat(3, 1fr); } }
+.percurso {
+  background: var(--brand-blue-deep);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: var(--r-lg);
+  padding: 34px 30px;
+  transition: border-color 0.3s, transform 0.3s var(--ease);
+  position: relative;
+  overflow: hidden;
+}
+.percurso:hover {
+  border-color: var(--brand-yellow);
+  transform: translateY(-4px);
+}
+.percurso .km {
+  font-size: clamp(64px, 7vw, 96px);
+  font-weight: 900; font-style: italic;
+  line-height: 0.85;
+  color: var(--brand-yellow);
+  margin-bottom: 10px;
+  letter-spacing: -0.04em;
+}
+.percurso .km .unit { font-size: 0.32em; color: rgba(255,255,255,0.4); margin-left: 4px; letter-spacing: 0.15em; vertical-align: top; }
+.percurso h3 {
+  font-size: 16px; font-weight: 900; font-style: italic;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.percurso p { color: var(--text-2); font-size: 14px; }
+
+/* ═══════════════════════════════════════════════════════════════
+   ESTRUTURA
+═══════════════════════════════════════════════════════════════ */
+.estrutura { background: var(--brand-blue-deep); }
+.cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+@media (min-width: 640px) { .cards-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 960px) { .cards-grid { grid-template-columns: repeat(3, 1fr); } }
+.card {
+  background: rgba(0, 23, 68, 0.55);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: var(--r-lg);
+  padding: 30px 26px;
+  transition: border-color 0.3s, transform 0.35s var(--ease);
+  backdrop-filter: blur(10px);
+}
+.card:hover {
+  border-color: rgba(255, 204, 0, 0.4);
+  transform: translateY(-3px);
+}
+.card-icon {
+  width: 48px; height: 48px;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(255, 204, 0, 0.08);
+  color: var(--brand-yellow);
+  margin-bottom: 18px;
+}
+.card-icon svg { width: 22px; height: 22px; }
+.card-title {
+  font-size: 16px; font-weight: 900; font-style: italic;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.card-body { color: var(--text-2); font-size: 14.5px; line-height: 1.55; }
+
+/* ═══════════════════════════════════════════════════════════════
+   AFTER — PAPAZONI
+═══════════════════════════════════════════════════════════════ */
+.after {
+  padding: calc(var(--section-y) * 1.1) 0;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse 70% 60% at 80% 50%, rgba(0, 174, 239, 0.22), transparent 65%),
+    var(--brand-blue);
+}
+.after-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  align-items: center;
+}
+@media (min-width: 960px) { .after-grid { grid-template-columns: 1.15fr 1fr; gap: 56px; } }
+.after-title {
+  font-weight: 900; font-style: italic;
+  font-size: clamp(40px, 6vw, 80px);
+  line-height: 0.9;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.after-title .hl { color: var(--brand-yellow); }
+.after-body {
+  font-size: clamp(15px, 1.6vw, 17px);
+  color: var(--text-2);
+  max-width: 52ch;
+  margin-bottom: 28px;
+}
+.after-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.tag {
+  padding: 8px 14px;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 4px;
+  font-size: 11px; font-weight: 900; font-style: italic;
+  background: rgba(255,255,255,0.05);
+  color: var(--text);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.after-visual {
+  aspect-ratio: 4/5;
+  background: var(--brand-blue-deep);
+  border: 1px solid rgba(0, 174, 239, 0.2);
+  border-radius: var(--r-xl);
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+.after-visual-img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  transition: transform 1.2s var(--ease-out);
+  filter: saturate(1.05) contrast(1.02);
+}
+.after-visual:hover .after-visual-img { transform: scale(1.04); }
+.after-visual-overlay {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(180deg, transparent 0%, transparent 45%, rgba(0,17,51,0.4) 70%, rgba(0,17,51,0.95) 100%),
+    linear-gradient(180deg, rgba(0,51,153,0.25) 0%, transparent 30%);
+  mix-blend-mode: normal;
+  z-index: 1;
+}
+.after-visual-badge {
+  position: absolute; top: 20px; left: 20px;
+  z-index: 3;
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 7px 12px;
+  background: var(--brand-yellow);
+  color: var(--brand-blue);
+  font-size: 10px; font-weight: 900; font-style: italic;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+.after-visual-badge::before {
+  content: ''; width: 6px; height: 6px; border-radius: 50%;
+  background: var(--brand-blue);
+  animation: pulseDot 1.8s infinite;
+}
+@keyframes pulseDot { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
+.after-visual-caption {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  padding: 28px 28px 26px;
+  z-index: 2;
+  text-align: left;
+}
+.after-visual-label {
+  font-size: clamp(26px, 3.6vw, 40px);
+  font-weight: 900; font-style: italic;
+  letter-spacing: -0.02em;
+  color: var(--brand-yellow);
+  text-transform: uppercase;
+  line-height: 0.95;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.4);
+}
+.after-visual-sub {
+  font-size: 11px; font-weight: 700; letter-spacing: 0.25em;
+  color: rgba(255,255,255,0.8);
+  margin-top: 6px;
+  text-transform: uppercase;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   INCLUSO
+═══════════════════════════════════════════════════════════════ */
+.includes-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  align-items: start;
+}
+@media (min-width: 900px) { .includes-grid { grid-template-columns: 1fr 1.1fr; gap: 56px; } }
+.includes-list {
+  display: grid; gap: 0;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  background: var(--brand-blue-deep);
+}
+.includes-item {
+  padding: 18px 22px;
+  display: flex; align-items: center; gap: 14px;
+  transition: background 0.25s;
+  font-size: 15px; font-weight: 500;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+.includes-item:first-child { border-top: 0; }
+.includes-item:hover { background: rgba(255,255,255,0.05); }
+.includes-item .check {
+  flex-shrink: 0;
+  width: 22px; height: 22px;
+  border-radius: 4px;
+  background: var(--brand-yellow);
+  color: var(--brand-blue);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 13px; font-weight: 900;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   CRONOGRAMA
+═══════════════════════════════════════════════════════════════ */
+.timeline {
+  position: relative;
+  padding-left: 32px;
+  max-width: 580px;
+  margin: 0 auto;
+}
+.timeline::before {
+  content: '';
+  position: absolute; top: 6px; bottom: 6px; left: 9px;
+  width: 2px;
+  background: rgba(255, 204, 0, 0.35);
+}
+.tl-item { position: relative; padding-bottom: 28px; }
+.tl-item:last-child { padding-bottom: 0; }
+.tl-item::before {
+  content: '';
+  position: absolute; left: -28px; top: 6px;
+  width: 14px; height: 14px;
+  border-radius: 50%;
+  background: var(--brand-yellow);
+  box-shadow: 0 0 0 3px var(--brand-blue);
+}
+.tl-time {
+  font-size: 22px;
+  font-weight: 900; font-style: italic;
+  color: var(--brand-yellow);
+  letter-spacing: -0.01em;
+  margin-bottom: 2px;
+}
+.tl-label { font-size: 16px; font-weight: 700; margin-bottom: 3px; }
+.tl-desc { color: var(--text-2); font-size: 14px; }
+
+/* ═══════════════════════════════════════════════════════════════
+   INSCRIÇÃO
+═══════════════════════════════════════════════════════════════ */
+.inscricao { background: var(--brand-blue-deep); }
+.preco-card {
+  background: rgba(0, 23, 68, 0.6);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 174, 239, 0.25);
+  border-radius: var(--r-xl);
+  padding: 44px 36px;
+  max-width: 640px;
+  margin: 40px auto 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.preco-card::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 4px;
+  background: var(--brand-yellow);
+}
+.preco-badge {
+  display: inline-block;
+  background: var(--brand-yellow);
+  color: var(--brand-blue);
+  font-size: 10px; font-weight: 900; letter-spacing: 0.2em;
+  text-transform: uppercase; font-style: italic;
+  padding: 5px 12px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+.preco-range {
+  font-size: clamp(42px, 6vw, 68px);
+  font-weight: 900; font-style: italic;
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  margin-bottom: 6px;
+}
+.preco-range .cifrao { font-size: 0.5em; color: rgba(255,255,255,0.5); vertical-align: top; margin-right: 2px; }
+.preco-range .sep { color: rgba(255,255,255,0.5); margin: 0 6px; font-size: 0.6em; }
+.preco-desc { color: var(--text-2); font-size: 14px; margin-bottom: 24px; }
+.preco-desc strong { color: var(--text); }
+.preco-splits {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 24px 0 28px;
+  text-align: center;
+}
+.preco-split {
+  padding: 14px 8px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--r);
+}
+.preco-split .km {
+  font-size: 22px;
+  font-weight: 900; font-style: italic;
+  color: var(--brand-yellow);
+  letter-spacing: -0.02em;
+  margin-bottom: 3px;
+}
+.preco-split .val { font-size: 13px; color: var(--text-2); font-weight: 700; }
+.preco-card .btn { width: 100%; }
+
+/* ═══════════════════════════════════════════════════════════════
+   KIT
+═══════════════════════════════════════════════════════════════ */
+.kit-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+@media (min-width: 720px) { .kit-grid { grid-template-columns: 1fr 1fr; } }
+.kit-card {
+  background: rgba(0, 23, 68, 0.5);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--r-lg);
+  padding: 30px 28px;
+}
+.kit-card h3 {
+  font-size: 14px; font-weight: 900; font-style: italic;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--brand-yellow);
+  margin-bottom: 14px;
+}
+.kit-card .date {
+  font-size: 32px;
+  font-weight: 900; font-style: italic;
+  letter-spacing: -0.03em;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+.kit-card .time { color: var(--text-2); font-size: 14px; margin-bottom: 14px; }
+.kit-card .where {
+  padding-top: 14px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.5);
+  font-size: 13px;
+}
+.kit-card .where strong { color: var(--text); }
+
+/* ═══════════════════════════════════════════════════════════════
+   FAQ
+═══════════════════════════════════════════════════════════════ */
+.faq-list { max-width: 720px; margin: 0 auto; display: grid; gap: 8px; }
+.faq-item {
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--r);
+  background: rgba(0, 23, 68, 0.4);
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+.faq-q {
+  width: 100%;
+  padding: 20px 22px;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  text-align: left;
+  font-size: 15px; font-weight: 700;
+  transition: background 0.25s;
+}
+.faq-q:hover { background: rgba(255,255,255,0.04); }
+.faq-q .plus {
+  flex-shrink: 0;
+  width: 26px; height: 26px;
+  border-radius: 50%;
+  background: rgba(255, 204, 0, 0.15);
+  color: var(--brand-yellow);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px; font-weight: 900;
+  transition: transform 0.35s var(--ease), background 0.3s, color 0.3s;
+}
+.faq-item.open .faq-q .plus { transform: rotate(45deg); background: var(--brand-yellow); color: var(--brand-blue); }
+.faq-a { max-height: 0; overflow: hidden; transition: max-height 0.4s var(--ease); }
+.faq-item.open .faq-a { max-height: 300px; }
+.faq-a-inner { padding: 0 22px 22px; color: var(--text-2); line-height: 1.65; font-size: 14.5px; }
+
+/* ═══════════════════════════════════════════════════════════════
+   CTA FINAL
+═══════════════════════════════════════════════════════════════ */
+.final-cta {
+  padding: calc(var(--section-y) * 1.1) 0;
+  text-align: center;
+  background:
+    radial-gradient(ellipse 60% 70% at 50% 50%, rgba(0, 174, 239, 0.2), transparent 65%),
+    var(--brand-blue);
+}
+.final-cta .big {
+  font-weight: 900; font-style: italic;
+  font-size: clamp(36px, 6.5vw, 88px);
+  line-height: 0.92;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.final-cta .big .hl { color: var(--brand-yellow); }
+.final-cta p {
+  max-width: 54ch;
+  margin: 0 auto 32px;
+  font-size: clamp(15px, 1.6vw, 17px);
+  color: var(--text-2);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   FOOTER
+═══════════════════════════════════════════════════════════════ */
+footer {
+  padding: 48px 0 32px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  background: var(--brand-blue-darker);
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  margin-bottom: 28px;
+}
+@media (min-width: 720px) { .footer-grid { grid-template-columns: 2fr 1fr 1fr; } }
+.footer-brand p { color: var(--text-2); font-size: 14px; max-width: 40ch; margin-top: 14px; }
+.footer-col h4 {
+  font-size: 12px; font-weight: 900; font-style: italic;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--brand-yellow);
+  margin-bottom: 14px;
+}
+.footer-col a {
+  display: block;
+  padding: 5px 0;
+  color: var(--text-2);
+  font-size: 14px;
+  transition: color 0.25s;
+}
+.footer-col a:hover { color: var(--brand-yellow); }
+.footer-bottom {
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  display: flex; flex-wrap: wrap; gap: 14px; justify-content: space-between;
+  font-size: 12px; color: rgba(255,255,255,0.4);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   STICKY CTA MOBILE
+═══════════════════════════════════════════════════════════════ */
+.sticky-cta {
+  position: fixed; bottom: 12px; left: 12px; right: 12px; z-index: 99;
+  padding: 14px 20px;
+  background: var(--brand-yellow);
+  color: var(--brand-blue);
+  border-radius: 4px;
+  display: flex; align-items: center; justify-content: space-between;
+  font-weight: 900; font-style: italic;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  box-shadow: 0 14px 30px rgba(0,0,0,0.5);
+  transform: translateY(200%);
+  transition: transform 0.4s var(--ease);
+}
+.sticky-cta.show { transform: translateY(0); }
+.sticky-cta .arrow {
+  width: 26px; height: 26px; border-radius: 50%;
+  background: var(--brand-blue);
+  color: var(--brand-yellow);
+  display: flex; align-items: center; justify-content: center;
+}
+@media (min-width: 720px) { .sticky-cta { display: none; } }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <div class="nav-left">
+      <a href="#top" class="brand">
+        <div class="brand-logo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+        </div>
+        <div class="brand-text">
+          <span class="t1">Rede Boa</span>
+          <span class="t2">FM · Irecê</span>
+        </div>
+      </a>
+      <nav class="nav-menu">
+        <a href="#top" class="active">Início</a>
+        <a href="#percursos">Circuito</a>
+        <a href="#kit">Kits</a>
+        <a href="#cronograma">Programação</a>
+        <a href="#faq">Contato</a>
+      </nav>
+    </div>
+    <div class="nav-right">
+      <div class="nav-social">
+        <a href="https://www.instagram.com/radioboafmirece/" target="_blank" rel="noopener" aria-label="Instagram Boa FM">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="https://www.instagram.com/circuitoredeboadecorrida/" target="_blank" rel="noopener" aria-label="Instagram Circuito">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+      </div>
+      <a href="#inscricao" class="btn btn-yellow btn-pill">Inscreva-se</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1532444458054-01a7dd3e9fca?auto=format&fit=crop&q=80&w=2000" alt="Corredores na avenida" referrerpolicy="no-referrer">
+  </div>
+  <div class="hero-content container">
+    <div class="hero-main">
+      <div>
+        <div class="hero-badge-row">
+          <span class="hero-badge">1ª Edição</span>
+          <span class="hero-badge-line"></span>
+          <span class="hero-badge-label">Circuito Oficial · 31 · 05 · 2026</span>
+        </div>
+        <h1 class="hero-title">
+          <span class="line">
+            <span class="word w1">Rede&nbsp;Boa</span>
+          </span>
+          <span class="line">
+            <span class="word w2">de</span>
+            <span class="word w3">Corrida</span>
+          </span>
+          <span class="line">
+            <span class="word w4">Irecê.</span>
+          </span>
+        </h1>
+        <div class="hero-ctas">
+          <a href="#sobre" class="btn btn-primary btn-lg">
+            Saber mais sobre o evento
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a href="#percursos" class="btn btn-outline btn-lg">Ver percursos</a>
+        </div>
+        <div class="hero-meta">
+          <div class="hero-meta-item">
+            <div class="hero-meta-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+            <div class="hero-meta-text">
+              <h4>Data do evento</h4>
+              <p>31 de maio, 2026</p>
+            </div>
+          </div>
+          <div class="hero-meta-item">
+            <div class="hero-meta-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="hero-meta-text">
+              <h4>Localização</h4>
+              <p>Irecê · Bahia</p>
+            </div>
+          </div>
+          <div class="hero-meta-item">
+            <div class="hero-meta-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+            </div>
+            <div class="hero-meta-text">
+              <h4>Premiação</h4>
+              <p>R$ 10 mil</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card-wrap">
+        <div class="hero-card">
+          <div class="hero-card-lote">
+            <span class="lt1">Lote</span>
+            <span class="lt2">01</span>
+          </div>
+          <h3>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            Contagem regressiva
+          </h3>
+          <div class="countdown">
+            <div class="cd-box"><div class="cd-num" data-cd="d">00</div><div class="cd-label">Dias</div></div>
+            <div class="cd-box"><div class="cd-num" data-cd="h">00</div><div class="cd-label">Horas</div></div>
+            <div class="cd-box"><div class="cd-num" data-cd="m">00</div><div class="cd-label">Min</div></div>
+          </div>
+          <div class="hero-card-stats">
+            <div class="hero-card-stat-row">
+              <div class="left">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                <span>Inscritos</span>
+              </div>
+              <div class="right">1º lote aberto</div>
+            </div>
+            <div class="progress-track"><div class="progress-fill"></div></div>
+            <p class="progress-note">Vagas limitadas · preço promocional</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="categories">
+      <div class="categories-row">
+        <div class="cat-item">
+          <div class="cat-item-inner">
+            <span class="cat-item-num">01</span>
+            <span class="cat-item-label">Corrida 3K</span>
+          </div>
+          <div class="cat-item-bar"></div>
+        </div>
+        <div class="cat-item active">
+          <div class="cat-item-inner">
+            <span class="cat-item-num">02</span>
+            <span class="cat-item-label">Corrida 5K</span>
+          </div>
+          <div class="cat-item-bar"></div>
+        </div>
+        <div class="cat-item">
+          <div class="cat-item-inner">
+            <span class="cat-item-num">03</span>
+            <span class="cat-item-label">Corrida 10K</span>
+          </div>
+          <div class="cat-item-bar"></div>
+        </div>
+        <div class="cat-item">
+          <div class="cat-item-inner">
+            <span class="cat-item-num">04</span>
+            <span class="cat-item-label">Papazoni no Barretão</span>
+          </div>
+          <div class="cat-item-bar"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- QUICKBAND -->
+<div class="quickband">
+  <div class="container">
+    <div class="quickband-grid">
+      <div class="qb-item"><div class="qb-label">Data</div><div class="qb-value">31 de Maio</div></div>
+      <div class="qb-item"><div class="qb-label">Largada</div><div class="qb-value">07:00</div></div>
+      <div class="qb-item"><div class="qb-label">Percursos</div><div class="qb-value">3K · 5K · 10K</div></div>
+      <div class="qb-item"><div class="qb-label">Premiação</div><div class="qb-value">R$ 10 mil</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- POSICIONAMENTO -->
+<section class="positioning" id="sobre">
+  <div class="container">
+    <span class="eyebrow" data-reveal>O evento</span>
+    <h2 class="big-text" data-reveal style="--delay: 80ms">
+      Uma corrida bem-feita. <span class="hl">E o depois</span> que ninguém vai esquecer.
+    </h2>
+    <p class="sub" data-reveal style="--delay: 160ms">
+      Percurso cronometrado, enfermeira e bombeiros no trajeto, hidratação e alimentação em pontos estratégicos. Depois da prova e da premiação, o trio Barretão sobe a avenida com Papazoni. Tudo da manhã até o fim da festa.
+    </p>
+  </div>
+</section>
+
+<!-- PERCURSOS -->
+<section id="percursos">
+  <div class="container">
+    <div style="margin-bottom: 16px;">
+      <span class="eyebrow" data-reveal>Percursos</span>
+      <h2 class="section-title" data-reveal style="--delay: 80ms">
+        Três distâncias. <span class="hl">Um só dia.</span>
+      </h2>
+    </div>
+    <div class="percursos-grid">
+      <div class="percurso" data-reveal>
+        <div class="km">3<span class="unit">KM</span></div>
+        <h3>Estreantes e famílias</h3>
+        <p>Distância pra quem tá começando, corrida em grupo ou família. Trajeto leve e sinalizado.</p>
+      </div>
+      <div class="percurso" data-reveal style="--delay: 100ms">
+        <div class="km">5<span class="unit">KM</span></div>
+        <h3>Ritmo intermediário</h3>
+        <p>Distância clássica de corrida de rua. Equilíbrio entre desafio e pace sustentável.</p>
+      </div>
+      <div class="percurso" data-reveal style="--delay: 200ms">
+        <div class="km">10<span class="unit">KM</span></div>
+        <h3>Corredor experiente</h3>
+        <p>Prova completa pra quem treina. Cronometragem oficial e classificação por categoria.</p>
+      </div>
+    </div>
+    <p style="margin-top: 20px; font-size: 13px; color: var(--text-3); text-align: center;">
+      Categorias disponíveis em cada percurso: Geral, PCD e Idoso.
+    </p>
+  </div>
+</section>
+
+<!-- ESTRUTURA -->
+<section class="estrutura" id="estrutura">
+  <div class="container">
+    <div style="margin-bottom: 40px;">
+      <span class="eyebrow" data-reveal>Estrutura</span>
+      <h2 class="section-title" data-reveal style="--delay: 80ms">O que está incluído na corrida.</h2>
+      <p class="section-lead" data-reveal style="--delay: 160ms">
+        Prova pensada pra quem corre. Com tudo que um evento esportivo sério precisa ter.
+      </p>
+    </div>
+    <div class="cards-grid">
+      <div class="card" data-reveal>
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        </div>
+        <h3 class="card-title">Suporte médico</h3>
+        <p class="card-body">Enfermeira no percurso e ambulância de prontidão durante toda a prova.</p>
+      </div>
+      <div class="card" data-reveal style="--delay: 60ms">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L6 8v6c0 5 3 8 6 9 3-1 6-4 6-9V8l-6-6z"/></svg>
+        </div>
+        <h3 class="card-title">Bombeiros</h3>
+        <p class="card-body">Corpo de Bombeiros acompanhando o trajeto do início ao fim.</p>
+      </div>
+      <div class="card" data-reveal style="--delay: 120ms">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12v8H4v-8M2 7h20v5H2zM12 22V7M12 7H8.5a2.5 2.5 0 1 1 0-5C10 2 12 7 12 7zM12 7h3.5a2.5 2.5 0 1 0 0-5C14 2 12 7 12 7z"/></svg>
+        </div>
+        <h3 class="card-title">Kit do corredor</h3>
+        <p class="card-body">Camisa oficial do circuito, número de peito e sacochila com brindes dos patrocinadores.</p>
+      </div>
+      <div class="card" data-reveal style="--delay: 180ms">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+        </div>
+        <h3 class="card-title">Medalha de participação</h3>
+        <p class="card-body">Pra todo corredor que cruzar a linha de chegada, independente da colocação.</p>
+      </div>
+      <div class="card" data-reveal style="--delay: 240ms">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h3 class="card-title">Cronometragem oficial</h3>
+        <p class="card-body">Prova cronometrada com resultado individual e classificação por categoria.</p>
+      </div>
+      <div class="card" data-reveal style="--delay: 300ms">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <h3 class="card-title">Hidratação e alimentação</h3>
+        <p class="card-body">Água em pontos do percurso. Frutas, açaí e salada de frutas na chegada.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AFTER PAPAZONI -->
+<section class="after" id="papazoni">
+  <div class="container">
+    <div class="after-grid">
+      <div>
+        <span class="eyebrow" data-reveal>Depois da prova</span>
+        <h2 class="after-title" data-reveal style="--delay: 80ms">
+          Terminou a corrida. <span class="hl">Começou o show.</span>
+        </h2>
+        <p class="after-body" data-reveal style="--delay: 140ms">
+          Depois da premiação, o <strong>trio Barretão</strong> — o maior trio elétrico da Bahia — sobe a avenida com <strong>Papazoni</strong> no comando. O acesso à festa está incluso no seu ingresso da corrida.
+        </p>
+        <div class="after-tags" data-reveal style="--delay: 200ms">
+          <span class="tag">Papazoni ao vivo</span>
+          <span class="tag">Trio Barretão</span>
+          <span class="tag">Incluso no ingresso</span>
+        </div>
+      </div>
+      <div class="after-visual" data-reveal style="--delay: 160ms">
+        <img src="papazoni.jpg" alt="Papazoni cantando no palco" class="after-visual-img" loading="lazy">
+        <div class="after-visual-overlay"></div>
+        <div class="after-visual-badge">Atração oficial</div>
+        <div class="after-visual-caption">
+          <div class="after-visual-label">Papazoni</div>
+          <div class="after-visual-sub">Em cima do trio Barretão</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INCLUSO -->
+<section id="incluso">
+  <div class="container">
+    <div class="includes-grid">
+      <div>
+        <span class="eyebrow" data-reveal>O que vem no ingresso</span>
+        <h2 class="section-title" data-reveal style="--delay: 80ms">
+          Tudo num <span class="hl">pagamento só.</span>
+        </h2>
+        <p class="section-lead" data-reveal style="--delay: 160ms">
+          Sem taxas extras no dia do evento. Seu ingresso já garante a prova, a estrutura e o show.
+        </p>
+      </div>
+      <ul class="includes-list" data-reveal style="--delay: 200ms">
+        <li class="includes-item"><span class="check">✓</span> Vaga confirmada no percurso escolhido</li>
+        <li class="includes-item"><span class="check">✓</span> Camisa oficial do circuito</li>
+        <li class="includes-item"><span class="check">✓</span> Número de peito com cronometragem</li>
+        <li class="includes-item"><span class="check">✓</span> Medalha de participação</li>
+        <li class="includes-item"><span class="check">✓</span> Hidratação e alimentação</li>
+        <li class="includes-item"><span class="check">✓</span> Enfermeira, ambulância e bombeiros</li>
+        <li class="includes-item"><span class="check">✓</span> Acesso ao show do Papazoni no Barretão</li>
+        <li class="includes-item"><span class="check">✓</span> Locução e som da Boa FM ao vivo</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CRONOGRAMA -->
+<section class="bg-deep" id="cronograma">
+  <div class="container">
+    <div style="text-align: center; margin-bottom: 40px;">
+      <span class="eyebrow" data-reveal>Cronograma</span>
+      <h2 class="section-title" data-reveal style="--delay: 80ms; margin-inline: auto;">O dia do evento.</h2>
+    </div>
+    <div class="timeline" data-reveal>
+      <div class="tl-item">
+        <div class="tl-time">05:30</div>
+        <div class="tl-label">Concentração e retirada de kits</div>
+        <div class="tl-desc">Apenas participantes que ainda não retiraram o kit nos dias anteriores.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">06:30</div>
+        <div class="tl-label">Aquecimento oficial</div>
+        <div class="tl-desc">Alongamento guiado com som da Boa FM.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">07:00</div>
+        <div class="tl-label">Largada</div>
+        <div class="tl-desc">Pelotões separados por percurso e categoria. Trajeto sinalizado.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">08:30</div>
+        <div class="tl-label">Premiação</div>
+        <div class="tl-desc">Entrega dos troféus e do prêmio em dinheiro aos campeões de cada categoria.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">09:30</div>
+        <div class="tl-label">Sobe o Barretão com Papazoni</div>
+        <div class="tl-desc">Início do show no trio elétrico. Acesso liberado pra todos os inscritos.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">12:00</div>
+        <div class="tl-label">Encerramento</div>
+        <div class="tl-desc">Fim do evento e agradecimentos.</div>
+      </div>
+    </div>
+    <p style="text-align: center; margin-top: 24px; font-size: 12px; color: var(--text-3);">
+      * Horários previstos. Podem sofrer pequenos ajustes na semana do evento.
+    </p>
+  </div>
+</section>
+
+<!-- INSCRIÇÃO -->
+<section class="inscricao" id="inscricao">
+  <div class="container">
+    <div style="text-align: center;">
+      <span class="eyebrow" data-reveal>Inscrição</span>
+      <h2 class="section-title" data-reveal style="--delay: 80ms; margin-inline: auto;">
+        1º lote <span class="hl">aberto agora.</span>
+      </h2>
+      <p class="section-lead" data-reveal style="--delay: 160ms; margin-inline: auto;">
+        Inscrição pela plataforma oficial do evento (MS Sport). Valor varia conforme o percurso.
+      </p>
+    </div>
+    <div class="preco-card" data-reveal style="--delay: 220ms">
+      <span class="preco-badge">1º Lote · Aberto</span>
+      <div class="preco-range">
+        <span class="cifrao">R$</span>65,50 <span class="sep">—</span> <span class="cifrao">R$</span>98,00
+      </div>
+      <p class="preco-desc">Valor por pessoa, conforme o percurso. <strong>Pagamento único.</strong></p>
+      <div class="preco-splits">
+        <div class="preco-split"><div class="km">3K</div><div class="val">R$ 65,50</div></div>
+        <div class="preco-split"><div class="km">5K</div><div class="val">R$ 82,00</div></div>
+        <div class="preco-split"><div class="km">10K</div><div class="val">R$ 98,00</div></div>
+      </div>
+      <a href="https://mssport.com.br/ms-evento/1a-circuito-rede-boa-de-corrida-irece-31-05-2026/" target="_blank" rel="noopener" class="btn btn-yellow btn-lg">
+        Fazer inscrição pela MS Sport
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <p style="margin-top: 14px; font-size: 12px; color: var(--text-3);">Pagamento processado pela MS Sport.</p>
+    </div>
+  </div>
+</section>
+
+<!-- KIT -->
+<section id="kit">
+  <div class="container">
+    <div style="margin-bottom: 32px;">
+      <span class="eyebrow" data-reveal>Entrega de kit</span>
+      <h2 class="section-title" data-reveal style="--delay: 80ms">Retirada na Boa FM.</h2>
+      <p class="section-lead" data-reveal style="--delay: 160ms">
+        A retirada é feita nos dois dias que antecedem a corrida. Não há entrega no dia do evento.
+      </p>
+    </div>
+    <div class="kit-grid">
+      <div class="kit-card" data-reveal>
+        <h3>Primeiro dia</h3>
+        <div class="date">29 · Maio</div>
+        <div class="time">Sexta-feira · 14:00 às 18:00</div>
+        <div class="where"><strong>Rádio Boa FM</strong> · Irecê/BA</div>
+      </div>
+      <div class="kit-card" data-reveal style="--delay: 100ms">
+        <h3>Segundo dia</h3>
+        <div class="date">30 · Maio</div>
+        <div class="time">Sábado · 08:00 às 13:00 e 14:00 às 18:00</div>
+        <div class="where"><strong>Rádio Boa FM</strong> · Irecê/BA</div>
+      </div>
+    </div>
+    <div style="margin-top: 20px; padding: 16px 20px; background: rgba(255, 204, 0, 0.08); border: 1px solid rgba(255, 204, 0, 0.3); border-radius: var(--r); font-size: 13.5px; color: var(--text-2);">
+      <strong style="color: var(--brand-yellow); font-style: italic;">Atenção:</strong> Cada pessoa pode retirar no máximo 5 kits por vez, mediante cópia do documento e confirmação do percurso. <strong>Não há entrega de kit no dia da corrida.</strong>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="bg-deep" id="faq">
+  <div class="container">
+    <div style="text-align: center; margin-bottom: 36px;">
+      <span class="eyebrow" data-reveal>Perguntas frequentes</span>
+      <h2 class="section-title" data-reveal style="--delay: 80ms; margin-inline: auto;">Dúvidas comuns.</h2>
+    </div>
+    <div class="faq-list" data-reveal>
+      <div class="faq-item">
+        <button class="faq-q">É minha primeira corrida. Posso participar?<span class="plus">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">Pode. O percurso de 3K é pensado justamente pra quem tá começando ou quer correr em família. Você escolhe seu ritmo.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Como funciona a categoria PCD e Idoso?<span class="plus">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">No momento da inscrição você seleciona a categoria adequada (Geral, PCD ou Idoso). Cada uma tem classificação e premiação própria.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Quando retiro o kit?<span class="plus">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">Dias 29/05 (sexta, 14h-18h) e 30/05 (sábado, 8h-13h e 14h-18h), na sede da Rádio Boa FM em Irecê. Não há entrega no dia da corrida.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">O show do Papazoni tem custo separado?<span class="plus">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">Não. O acesso ao show está incluso no ingresso da corrida. Todo inscrito tem entrada liberada.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">E se chover?<span class="plus">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">O evento acontece mesmo com chuva leve. Em caso de chuva forte ou risco, reagendamos e comunicamos pelos canais oficiais. Seu ingresso é mantido.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="final-cta">
+  <div class="container">
+    <h2 class="big" data-reveal>
+      Inscrição aberta <span class="hl">pelo 1º lote.</span>
+    </h2>
+    <p data-reveal style="--delay: 100ms">
+      Valores mais baixos do evento. Conforme as vagas forem sendo preenchidas, o preço sobe.
+    </p>
+    <a href="https://mssport.com.br/ms-evento/1a-circuito-rede-boa-de-corrida-irece-31-05-2026/" target="_blank" rel="noopener" class="btn btn-yellow btn-xl" data-reveal style="--delay: 200ms">
+      Inscrever agora
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="brand">
+          <div class="brand-logo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+          </div>
+          <div class="brand-text">
+            <span class="t1">Rede Boa</span>
+            <span class="t2">FM · Irecê</span>
+          </div>
+        </a>
+        <p>1ª Circuito Rede Boa de Corrida. Realização Rádio Boa FM Irecê, em parceria com MS Sport.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Evento</h4>
+        <a href="#sobre">Sobre</a>
+        <a href="#percursos">Percursos</a>
+        <a href="#estrutura">Estrutura</a>
+        <a href="#cronograma">Cronograma</a>
+        <a href="#faq">Dúvidas</a>
+      </div>
+      <div class="footer-col">
+        <h4>Canais</h4>
+        <a href="https://www.instagram.com/circuitoredeboadecorrida/" target="_blank" rel="noopener">Instagram do Circuito</a>
+        <a href="https://www.instagram.com/radioboafmirece/" target="_blank" rel="noopener">Rádio Boa FM Irecê</a>
+        <a href="https://mssport.com.br/ms-evento/1a-circuito-rede-boa-de-corrida-irece-31-05-2026/" target="_blank" rel="noopener">Inscrição MS Sport</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Rádio Boa FM Irecê · Todos os direitos reservados</span>
+      <span>Desenvolvido por clickwave</span>
+    </div>
+  </div>
+</footer>
+
+<a href="#inscricao" class="sticky-cta" id="stickyCta">
+  <span>Inscrever-me</span>
+  <span class="arrow">→</span>
+</a>
+
+<script>
+/* COUNTDOWN */
+(function(){
+  const target = new Date('2026-05-31T07:00:00-03:00').getTime();
+  const els = {
+    d: document.querySelector('[data-cd="d"]'),
+    h: document.querySelector('[data-cd="h"]'),
+    m: document.querySelector('[data-cd="m"]')
+  };
+  const pad = n => String(Math.max(0, n)).padStart(2, '0');
+  function tick() {
+    let diff = Math.max(0, target - Date.now());
+    const d = Math.floor(diff / 86400000); diff -= d * 86400000;
+    const h = Math.floor(diff / 3600000); diff -= h * 3600000;
+    const m = Math.floor(diff / 60000);
+    els.d.textContent = pad(d);
+    els.h.textContent = pad(h);
+    els.m.textContent = pad(m);
+  }
+  tick(); setInterval(tick, 30000);
+})();
+
+/* NAV SCROLLED */
+(function(){
+  const nav = document.getElementById('nav');
+  const onScroll = () => {
+    if (window.scrollY > 60) nav.classList.add('scrolled');
+    else nav.classList.remove('scrolled');
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+})();
+
+/* REVEAL */
+(function(){
+  const els = document.querySelectorAll('[data-reveal]');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  els.forEach(el => io.observe(el));
+})();
+
+/* FAQ */
+(function(){
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.querySelector('.faq-q').addEventListener('click', () => {
+      item.classList.toggle('open');
+    });
+  });
+})();
+
+/* STICKY CTA */
+(function(){
+  const sticky = document.getElementById('stickyCta');
+  const hero = document.querySelector('.hero');
+  const target = document.getElementById('inscricao');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.target === hero) {
+        if (!e.isIntersecting) sticky.classList.add('show');
+        else sticky.classList.remove('show');
+      }
+      if (e.target === target && e.isIntersecting) sticky.classList.remove('show');
+    });
+  }, { threshold: 0.2 });
+  io.observe(hero);
+  io.observe(target);
+})();
+</script>
+</body>
+</html>

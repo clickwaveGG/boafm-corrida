@@ -1,0 +1,5 @@
+preview-*.png
+ref-*.png
+.vercel/
+.DS_Store
+node_modules/
