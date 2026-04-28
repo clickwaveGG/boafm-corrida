@@ -936,6 +936,61 @@ section { padding: var(--section-y) 0; position: relative; }
 }
 
 /* ═══════════════════════════════════════════════════════════════
+   SPONSORS
+═══════════════════════════════════════════════════════════════ */
+.sponsors { background: var(--brand-blue-deep); }
+.sponsors-head { text-align: center; margin-bottom: 40px; }
+.sponsors-head .section-title { margin-inline: auto; }
+.sponsors-head .section-lead { margin-inline: auto; }
+.sponsors-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+@media (min-width: 720px) { .sponsors-grid { grid-template-columns: repeat(4, 1fr); gap: 18px; } }
+.sponsor-card {
+  position: relative;
+  background: #fff;
+  border-radius: var(--r-lg);
+  padding: 26px 22px;
+  aspect-ratio: 1 / 1;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+  transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease);
+  overflow: hidden;
+}
+.sponsor-card::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: var(--brand-yellow);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s var(--ease-out);
+}
+.sponsor-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.32);
+}
+.sponsor-card:hover::before { transform: scaleX(1); }
+.sponsor-card img {
+  max-width: 78%;
+  max-height: 78%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+.sponsors-foot {
+  text-align: center;
+  margin-top: 32px;
+  font-size: 13px;
+  color: var(--text-3);
+}
+.sponsors-foot a { color: var(--brand-yellow); font-weight: 700; }
+.sponsors-foot a:hover { text-decoration: underline; }
+
+/* ═══════════════════════════════════════════════════════════════
    FOOTER
 ═══════════════════════════════════════════════════════════════ */
 footer {
@@ -1025,6 +1080,7 @@ footer {
         <a href="#percursos">Circuito</a>
         <a href="#kit">Kits</a>
         <a href="#cronograma">Programação</a>
+        <a href="#patrocinadores">Patrocinadores</a>
         <a href="#faq">Contato</a>
       </nav>
     </div>
@@ -1476,6 +1532,39 @@ footer {
   </div>
 </section>
 
+<!-- PATROCINADORES -->
+<section class="sponsors" id="patrocinadores">
+  <div class="container">
+    <div class="sponsors-head">
+      <span class="eyebrow" data-reveal>Quem apoia</span>
+      <h2 class="section-title" data-reveal style="--delay: 80ms">
+        Patrocinadores <span class="hl">do circuito.</span>
+      </h2>
+      <p class="section-lead" data-reveal style="--delay: 160ms">
+        Empresas que tornam a 1ª Circuito Rede Boa de Corrida possível.
+      </p>
+    </div>
+    <div class="sponsors-grid" data-reveal style="--delay: 220ms">
+      <div class="sponsor-card">
+        <img src="sponsors/clickrunner.png" alt="ClickRunner" loading="lazy">
+      </div>
+      <div class="sponsor-card">
+        <img src="sponsors/helioderm.png" alt="Helioderm Dermocosméticos" loading="lazy">
+      </div>
+      <div class="sponsor-card">
+        <img src="sponsors/fisiocenter.png" alt="FisioCenter Sport" loading="lazy">
+      </div>
+      <div class="sponsor-card">
+        <img src="sponsors/clickwave.png" alt="Click Wave Growth Marketing" loading="lazy">
+      </div>
+    </div>
+    <p class="sponsors-foot" data-reveal style="--delay: 300ms">
+      Quer somar marca à corrida? Fale com a gente pelo
+      <a href="https://www.instagram.com/circuitoredeboadecorrida/" target="_blank" rel="noopener">Instagram do circuito</a>.
+    </p>
+  </div>
+</section>
+
 <!-- CTA FINAL -->
 <section class="final-cta">
   <div class="container">
@@ -1514,6 +1603,7 @@ footer {
         <a href="#percursos">Percursos</a>
         <a href="#estrutura">Estrutura</a>
         <a href="#cronograma">Cronograma</a>
+        <a href="#patrocinadores">Patrocinadores</a>
         <a href="#faq">Dúvidas</a>
       </div>
       <div class="footer-col">
