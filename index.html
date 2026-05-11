@@ -634,6 +634,13 @@ section { padding: var(--section-y) 0; position: relative; }
   letter-spacing: 0.1em;
 }
 
+.after-acts {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-top: 40px;
+}
+@media (min-width: 720px) { .after-acts { grid-template-columns: 1fr 1fr; gap: 24px; } }
 .after-visual {
   aspect-ratio: 4/5;
   background: var(--brand-blue-deep);
@@ -1161,7 +1168,7 @@ footer {
         <div class="cat-item">
           <div class="cat-item-inner">
             <span class="cat-item-num">04</span>
-            <span class="cat-item-label">Papazoni no Barretão</span>
+            <span class="cat-item-label">Show no Barretão</span>
           </div>
           <div class="cat-item-bar"></div>
         </div>
@@ -1190,7 +1197,7 @@ footer {
       Uma corrida bem-feita. <span class="hl">E o depois</span> que ninguém vai esquecer.
     </h2>
     <p class="sub" data-reveal style="--delay: 160ms">
-      Percurso cronometrado, enfermeira e bombeiros no trajeto, hidratação e alimentação em pontos estratégicos. Depois da prova e da premiação, o trio Barretão sobe a avenida com Papazoni. Tudo da manhã até o fim da festa.
+      Percurso cronometrado, enfermeira e bombeiros no trajeto, hidratação e alimentação em pontos estratégicos. Depois da prova e da premiação, o trio Barretão sobe a avenida com Lucas Brito e Papazoni. Tudo da manhã até o fim do show.
     </p>
   </div>
 </section>
@@ -1227,31 +1234,41 @@ footer {
   </div>
 </section>
 
-<!-- AFTER PAPAZONI -->
+<!-- AFTER ATRAÇÕES -->
 <section class="after" id="papazoni">
   <div class="container">
-    <div class="after-grid">
-      <div>
-        <span class="eyebrow" data-reveal>Depois da prova</span>
-        <h2 class="after-title" data-reveal style="--delay: 80ms">
-          Terminou a corrida. <span class="hl">Começou o show.</span>
-        </h2>
-        <p class="after-body" data-reveal style="--delay: 140ms">
-          Depois da premiação, o <strong>trio Barretão</strong> — o maior trio elétrico da Bahia — sobe a avenida com <strong>Papazoni</strong> no comando. O acesso à festa está incluso no seu ingresso da corrida.
-        </p>
-        <div class="after-tags" data-reveal style="--delay: 200ms">
-          <span class="tag">Papazoni ao vivo</span>
-          <span class="tag">Trio Barretão</span>
-          <span class="tag">Incluso no ingresso</span>
+    <div style="text-align: center; max-width: 720px; margin: 0 auto;">
+      <span class="eyebrow" data-reveal>Depois da prova</span>
+      <h2 class="after-title" data-reveal style="--delay: 80ms">
+        Terminou a corrida. <span class="hl">Começou o show.</span>
+      </h2>
+      <p class="after-body" data-reveal style="--delay: 140ms; margin-inline: auto;">
+        Depois da premiação, o <strong>trio Barretão</strong> — o maior trio elétrico da Bahia — sobe a avenida. <strong>Lucas Brito</strong> abre o show e <strong>Papazoni</strong> assume em seguida. Acesso à festa incluso no ingresso da corrida.
+      </p>
+      <div class="after-tags" data-reveal style="--delay: 200ms; justify-content: center;">
+        <span class="tag">Lucas Brito</span>
+        <span class="tag">Papazoni</span>
+        <span class="tag">Trio Barretão</span>
+        <span class="tag">Incluso no ingresso</span>
+      </div>
+    </div>
+    <div class="after-acts">
+      <div class="after-visual" data-reveal style="--delay: 220ms">
+        <img src="lucas-brito.jpg" alt="Lucas Brito" class="after-visual-img" loading="lazy">
+        <div class="after-visual-overlay"></div>
+        <div class="after-visual-badge">Abertura</div>
+        <div class="after-visual-caption">
+          <div class="after-visual-label">Lucas Brito</div>
+          <div class="after-visual-sub">Sobe primeiro no trio</div>
         </div>
       </div>
-      <div class="after-visual" data-reveal style="--delay: 160ms">
+      <div class="after-visual" data-reveal style="--delay: 280ms">
         <img src="papazoni.jpg" alt="Papazoni cantando no palco" class="after-visual-img" loading="lazy">
         <div class="after-visual-overlay"></div>
-        <div class="after-visual-badge">Atração oficial</div>
+        <div class="after-visual-badge">Atração principal</div>
         <div class="after-visual-caption">
           <div class="after-visual-label">Papazoni</div>
-          <div class="after-visual-sub">Em cima do trio Barretão</div>
+          <div class="after-visual-sub">Fecha a festa</div>
         </div>
       </div>
     </div>
@@ -1335,7 +1352,7 @@ footer {
         <li class="includes-item"><span class="check">✓</span> Medalha de participação</li>
         <li class="includes-item"><span class="check">✓</span> Hidratação e alimentação</li>
         <li class="includes-item"><span class="check">✓</span> Enfermeira, ambulância e bombeiros</li>
-        <li class="includes-item"><span class="check">✓</span> Acesso ao show do Papazoni no Barretão</li>
+        <li class="includes-item"><span class="check">✓</span> Acesso ao show de Lucas Brito e Papazoni no Barretão</li>
         <li class="includes-item"><span class="check">✓</span> Locução e som da Boa FM ao vivo</li>
       </ul>
     </div>
@@ -1372,13 +1389,18 @@ footer {
       </div>
       <div class="tl-item">
         <div class="tl-time">09:30</div>
-        <div class="tl-label">Sobe o Barretão com Papazoni</div>
-        <div class="tl-desc">Início do show no trio elétrico. Acesso liberado pra todos os inscritos.</div>
+        <div class="tl-label">Sobe o Barretão com Lucas Brito</div>
+        <div class="tl-desc">Abertura do show no trio elétrico. Acesso liberado pra todos os inscritos.</div>
       </div>
       <div class="tl-item">
-        <div class="tl-time">12:00</div>
+        <div class="tl-time">10:30</div>
+        <div class="tl-label">Papazoni no comando</div>
+        <div class="tl-desc">Atração principal assume o trio Barretão.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">Final</div>
         <div class="tl-label">Encerramento</div>
-        <div class="tl-desc">Fim do evento e agradecimentos.</div>
+        <div class="tl-desc">A festa segue até o fim do show. Sem horário fixo de encerramento.</div>
       </div>
     </div>
     <p style="text-align: center; margin-top: 24px; font-size: 12px; color: var(--text-3);">
@@ -1402,7 +1424,7 @@ footer {
     <div class="preco-card" data-reveal style="--delay: 220ms">
       <span class="preco-badge">2º Lote · Aberto</span>
       <div class="preco-range">
-        <span class="cifrao">R$</span>120<span style="font-size: 0.5em; color: var(--text-3); margin-left: 2px;">,00</span>
+        <span class="cifrao">R$</span>110<span style="font-size: 0.5em; color: var(--text-3); margin-left: 2px;">,00</span>
       </div>
       <p class="preco-desc" style="margin-bottom: 24px;">Pagamento único pela plataforma MS Sport.</p>
       <a href="https://mssport.com.br/ms-evento/1a-circuito-rede-boa-de-corrida-irece-31-05-2026/" target="_blank" rel="noopener" class="btn btn-yellow btn-lg">
@@ -1465,7 +1487,7 @@ footer {
         <div class="faq-a"><div class="faq-a-inner">Dias 29/05 (sexta, 14h-18h) e 30/05 (sábado, 8h-13h e 14h-18h), na sede da Rádio Boa FM em Irecê. Não há entrega no dia da corrida.</div></div>
       </div>
       <div class="faq-item">
-        <button class="faq-q">O show do Papazoni tem custo separado?<span class="plus">+</span></button>
+        <button class="faq-q">Os shows no Barretão têm custo separado?<span class="plus">+</span></button>
         <div class="faq-a"><div class="faq-a-inner">Não. O acesso ao show está incluso no ingresso da corrida. Todo inscrito tem entrada liberada.</div></div>
       </div>
       <div class="faq-item">
